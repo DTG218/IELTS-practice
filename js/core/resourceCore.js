@@ -412,7 +412,7 @@
             params.set('examId', String(examId));
         }
         params.set('dataKey', String(resolvedDataKey));
-        return `assets/generated/reading-exams/reading-practice-unified.html?${params.toString()}`;
+        return `assets/generated/reading-exams/reading-practice-ipad.html?${params.toString()}`;
     }
 
     function resolveExamBasePath(exam) {
