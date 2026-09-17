@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>IELTS Reading</title></head><body><p style="font-family:-apple-system,sans-serif;padding:20px">正在加载阅读练习…</p><script>
+(async function(){
+  const source='https://raw.githubusercontent.com/sallowayma-git/IELTS-practice/364ebc5de017563bbb01c5553b546ec5f04c75de/assets/generated/reading-exams/reading-practice-unified.html';
+  try{
+    const response=await fetch(source,{cache:'force-cache'});
+    if(!response.ok) throw new Error('HTTP '+response.status);
+    const html=await response.text();
+    document.open();document.write(html);document.close();
+  }catch(error){
+    document.body.innerHTML='<div style="font-family:-apple-system,sans-serif;padding:24px"><h3>阅读页面加载失败</h3><p>请检查网络后刷新页面。</p></div>';
+    console.error('[Reading core loader]',error);
+  }
+})();
+</script></body></html>
